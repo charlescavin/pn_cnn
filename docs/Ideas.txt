@@ -1,0 +1,19 @@
+Iterate through 10,000 X-rays
+Iterate through each row of pixels in the X-ray
+Working from the outside in on both sides, mark all black pixels (set value of pixel to 999)
+When all 10,000 X-rays have been processed, compute the average pixel value at every pixel location
+When the average for a pixel location is 999, it means all the X-rays are black at that location
+Store that location in a list of lists (list_to_delete)
+
+Inject a process to delete all the pixel locations where the average was 999, for all 377,110 X-rays
+This process should occur before other processing such as scaling are performed
+
+Develop an algorithm that performs convolutions on irregularly shaped images. For 3x3 convolutions,
+I would need to have 3 pixels to the right, and 3 down for each convolution. If it doesn't exist, skip
+to the next pixel across the columns and the rows.
+
+Create a vector of pixels by joining each row to the prior row.
+
+For fun, calculate the percentage of pixels eliminated
+
+Think about how to eliminate the cervical spine down to C6 or C7.

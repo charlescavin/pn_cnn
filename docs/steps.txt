@@ -1,0 +1,11 @@
+To ensure apples to apples comparisons between images the following values must be the same.
+
+    1. View Code Sequence / Code Meaning
+    2. Patient Orientation Code Sequence / Code Meaning
+    3. Add more here!
+
+Decide what to do when there are both PA or AP and LAT.
+    • Include the LAT image, then run through several filters to reduce size
+    • Save the result of the filtering so I don’t have to rerun that part for subsequent variations in the NN.
+    • Create a csv file for each variation of image parameters (size, etc.)
+    • Can I try going through a couple of 10,000 node layers? That would seem to mimic the human brain somewhat better.
