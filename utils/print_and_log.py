@@ -1,3 +1,6 @@
+# author  : Charles Cavin <charles@cavinAI.com>
+# license : MIT
+
 import logging
 from datetime import datetime
 
@@ -30,11 +33,10 @@ class PrintAndLog:
         )
 
     def print(self, msg, log_level="info", end=False, log=True, prt=True):
-        if prt is True:
-            if end is not True:
-                print(msg)
-            else:
-                print(msg, end=' ')
+        if prt is True and end is not True:
+            print(msg)
+        else:
+            print(msg, end=' ')
 
         if log is True:
             logging.log(self.lvl[log_level], msg)

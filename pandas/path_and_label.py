@@ -48,6 +48,8 @@ meta_data = (pd.read_csv(META_DATA,
 meta_data['subject_study_id'] = combine_subject_study(meta_data['subject_id'],
                                                       meta_data['study_id'])
 
+# The combination of ViewPosition and PatientOrientation limits the size
+# of the csv file to 227,827
 meta_data = meta_data[(meta_data.ViewPosition == VIEW_POSITION) &
                       (meta_data.PatientOrientation == 'Erect')]
 meta_data = meta_data.drop(

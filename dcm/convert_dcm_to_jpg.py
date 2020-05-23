@@ -3,7 +3,7 @@
 
 import pydicom as dicom
 import cv2
-from kode.utils.print_and_log import PrintAndLog
+from utils.print_and_log import PrintAndLog
 
 pl = PrintAndLog('/data8/pn/jpg/logs/convert_dcm_to_jpg')
 

@@ -1,4 +1,6 @@
 # author : Charles Cavin <charles@cavinAI.com>
+# license : MIT
+
 from datetime import datetime as dt
 
 
@@ -80,7 +82,7 @@ class ProcessTime:
         self._interim_time = self._start_time
         return f"{self._start_time:%Y-%m-%d  %H:%M:%S}"
 
-    def batch_check(self):
+    def batch_timing(self):
         """
         Parameters
         ----------
@@ -150,13 +152,9 @@ class ProcessTime:
         """
         Parameters
         ----------
-        time_delta : datetime.time_delta
+        date_time : datetime.datetime
 
-        show_days : boolena
-            Determines if the number of days should be included in the format
-
-        returns:  if show_days is True, a formatted timedelta,
-            'd days, hours:minutes:seconds' otherwise 'hours:minutes:seconds'
+        returns:  a datetime formatted with '%Y-%m-%d  %H:%M:%S'
         """
         return f"{date_time:%Y-%m-%d  %H:%M:%S}"
 
@@ -166,6 +164,6 @@ class ProcessTime:
         ----------
         none
 
-        returns:  the current date formatted by datetime_fmt
+        returns:  the current date formatted with '%Y-%m-%d  %H:%M:%S'
         """
         return self.datetime_fmt(dt.now())
