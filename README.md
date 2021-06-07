@@ -1,5 +1,5 @@
 # pn_cnn
-AI modeling with PhysioNet's Chest X-ray Data
+AI Solutions with PhysioNet's Chest X-ray Data
 
 The purpose of this work is to help doctors help patients with faster access to relevant data, producing more accurate findings, and providing more time for the doctor-patient relationship. 
 
